@@ -3439,7 +3439,7 @@ function fetchSWFObjectWidgetCode($widget,$flashvarsArray,$width,$height,$bgcolo
 		<script type='text/javascript' src='/filter/poodll/flash/swfobject_22.js'></script>
 		<script type='text/javascript'>
 		  var flashvars = { " . $flashvars . " };
-		  var params = { allowfullscreen:'true', allowscriptaccess:'always' };
+		  var params = { allowfullscreen:'true', allowscriptaccess:'always', wmode:'opaque' };
 		  var attributes = { id:'" .$widgetid . "', name:'" .$widgetid . "' };
 		  swfobject.embedSWF('" . $CFG->wwwroot . '/filter/poodll/flash/' . $widget . "','" .$containerid . "','" . $width . "','" . $height . "','9.0.115','false',
 			flashvars, params, attributes);
