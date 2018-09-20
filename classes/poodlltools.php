@@ -2318,6 +2318,9 @@ class poodlltools
 				case "ebm":
 					$mime = "video/webm";
 					break;
+                case "mp3": //needed for iOS - DECHAS-846
+                    $mime = "audio/mp3";
+                    break;
 				default:
 					$mime = "video/mp4";
 			}
